@@ -7,6 +7,10 @@ input{
   transform: translateY(7rpx);
 }
 
+button{
+  color: #000;
+}
+
 .container{
   background-color: #eaebeb;
 }

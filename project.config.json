@@ -66,6 +66,12 @@
         {
           "name": "pages/createStu/createStu",
           "pathName": "pages/createStu/createStu",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/createTea/createTea",
+          "pathName": "pages/createTea/createTea",
           "scene": null
         }
       ]

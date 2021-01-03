@@ -27,6 +27,12 @@
       <span></span>
       <input name="classroom" type="text"></input>
     </div>
+    
+    <div class="tapNumber">
+      <label for="classroom">学号:</label>
+      <span></span>
+      <input style="width : 320rpx" name="id" type="number"></input>
+    </div>
 
     <div class="tapNumber">
       <label for="classroom">电话:</label>
