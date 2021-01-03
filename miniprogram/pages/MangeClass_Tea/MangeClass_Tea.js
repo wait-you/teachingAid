@@ -1,18 +1,38 @@
-// miniprogram/pages/studentHome/studentHome.js
+// miniprogram/pages/MangeClass_Tea/MangeClass_Tea.js
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    classList : [],
+    isNull : false
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    const db = wx.cloud.database()
+    db.collection("teachers").where({_openid:app.globalData.openId}).get().then(res=>{
+      console.log(res.data[0].classes)
 
+      if(res.data[0].classes.length==0){
+        this.setData({
+          isNull : true
+        })
+      }
+
+      for(let i = 0; i < res.data[0].classes.length; i++){
+        const _ = db.command
+        db.collection(res.data[0].classes[i]).get().then(res=>{
+          this.setData({
+            classList : this.data.classList.concat(res.data[0])
+          })
+        })
+      }
+    })
   },
 
   /**
@@ -62,17 +82,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-
-  toJoinClass : function(){
-    wx.navigateTo({
-      url: '../joinClass/joinClass',
-    })
-  },
-
-  toMangeClass:function(){
-    wx.navigateTo({
-      url: '../MangeClass_Stu/MangeClass_Stu',
-    })
   }
 })

@@ -1,11 +1,14 @@
 {
   "pages": [
     "pages/login/login",
-    "pages/home/home",
     "pages/studentHome/studentHome",
     "pages/teacherHome/teacherHome",
     "pages/createStu/createStu",
-    "pages/createTea/createTea"
+    "pages/createTea/createTea",
+    "pages/createClass/createClass",
+    "pages/joinClass/joinClass",
+    "pages/MangeClass_Tea/MangeClass_Tea",
+    "pages/MangeClass_Stu/MangeClass_Stu"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

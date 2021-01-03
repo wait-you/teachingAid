@@ -1,1 +1,4 @@
 /* miniprogram/pages/studentHome/studentHome.wxss */
+button{
+  color: #000;
+}

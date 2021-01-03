@@ -1,0 +1,9 @@
+<!--components/myClasses/myClasses.wxml-->
+<div class="container">
+  <div class="AllItem">
+      <text class="item item1">{{itemM.name}}</text>
+      <text class="item item2">{{itemM.persons}}</text>
+      <text selectable="true" class="item item1">{{itemM.classId}}</text>
+  </div>
+</div>
+

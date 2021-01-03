@@ -1,0 +1,16 @@
+<!--miniprogram/pages/createStu/createStu.wxml-->
+<div class="container">
+  <form bindsubmit="formSubmit">
+
+    <div class="tapName">
+      <label for="name">名称:</label>
+      <span></span>
+      <span></span>
+      <input name="name" id="name" placeholder="" type="text"></input>
+    </div>
+
+   <button class="submitBtn" form-type="submit">加入</button>
+  </form>
+
+  <text style="margin-top : 200rpx">图片 背景 图标</text>
+</div>

@@ -1,2 +1,3 @@
 <!--miniprogram/pages/studentHome/studentHome.wxml-->
-<text>miniprogram/pages/studentHome/studentHome.wxml</text>
+<button bindtap="toJoinClass">加入班级</button>
+<button bindtap="toMangeClass">管理班级</button>

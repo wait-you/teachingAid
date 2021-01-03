@@ -63,4 +63,15 @@ Page({
 
   },
 
+  toCreateClass : function(){
+    wx.navigateTo({
+      url: '../createClass/createClass',
+    })
+  },
+
+  toMangeClass : function(){
+    wx.navigateTo({
+      url: '../MangeClass_Tea/MangeClass_Tea',
+    })
+  }
 })

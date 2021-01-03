@@ -1,0 +1,20 @@
+<!--miniprogram/pages/MangeClass_Tea/MangeClass_Tea.wxml-->
+<div class="container">
+  <Text class="tip">长按复制课程码,发送给学生加入即可</Text>
+
+  <div class="content">
+    <div class="title">
+      <text style="width:200rpx">班级</text>
+      <text style="width:100rpx">人数</text>
+      <text style="width:200rpx">课程码</text>
+    </div>
+    <div class="isNull" wx:if="{{isNull}}">
+      你还没有创建任何班级哦！
+    </div>
+    <div class="classes" wx:else>
+      <block wx:for="{{classList}}" wx:key="id">
+        <myClasses itemM="{{item}}" data-index="{{index}}"/>
+      </block>
+    </div>
+  </div>
+</div>

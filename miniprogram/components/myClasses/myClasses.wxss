@@ -1,0 +1,19 @@
+/* components/myClasses/myClasses.wxss */
+.AllItem{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40rpx;
+}
+
+.item1{
+  width: 200rpx;
+}
+
+.item2{
+  width: 100rpx;
+}
+.item{
+  text-align: center;
+  font-size: 36rpx;
+  overflow: hidden;
+}

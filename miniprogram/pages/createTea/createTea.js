@@ -131,6 +131,7 @@ Page({
                 sex : e.detail.value.sex,
                 subject : e.detail.value.classroom,
                 id : e.detail.value.id,
+                classes : [],
                 number : e.detail.value.number
               }
             }).then(res=>{

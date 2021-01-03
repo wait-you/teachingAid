@@ -128,6 +128,7 @@ Page({
                 name : e.detail.value.name,
                 sex : e.detail.value.sex,
                 classroom : e.detail.value.classroom,
+                classes : [],
                 id : e.detail.value.id,
                 number : e.detail.value.number
               }

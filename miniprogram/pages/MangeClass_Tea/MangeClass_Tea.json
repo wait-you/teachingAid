@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "myClasses" : "/components/myClasses/myClasses"
+  },
+  "navigationBarTitleText": "管理班级"
+}

@@ -19,7 +19,7 @@
     "checkSiteMap": true,
     "uploadWithSourceMap": true,
     "compileHotReLoad": false,
-    "useMultiFrameRuntime": false,
+    "useMultiFrameRuntime": true,
     "useApiHook": true,
     "babelSetting": {
       "ignore": [],
@@ -30,13 +30,16 @@
     "useIsolateContext": true,
     "useCompilerModule": true,
     "userConfirmedUseCompilerModuleSwitch": false,
+    "userConfirmedBundleSwitch": false,
     "packNpmManually": false,
     "packNpmRelationList": [],
-    "minifyWXSS": true
+    "minifyWXSS": true,
+    "bundle": false,
+    "useApiHostProcess": false
   },
   "appid": "wx90c7de01f171d140",
   "projectname": "%E6%95%99%E5%AD%A6%E8%BE%85%E5%8A%A9",
-  "libVersion": "2.8.1",
+  "libVersion": "2.14.1",
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
   "condition": {
@@ -52,12 +55,6 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/home/home",
-          "pathName": "pages/home/home",
-          "query": "",
-          "scene": null
-        },
-        {
           "name": "pages/login/login",
           "pathName": "pages/login/login",
           "query": "",
@@ -72,6 +69,36 @@
         {
           "name": "pages/createTea/createTea",
           "pathName": "pages/createTea/createTea",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/createClass/createClass",
+          "pathName": "pages/createClass/createClass",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/studentHome/studentHome",
+          "pathName": "pages/studentHome/studentHome",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/joinClass/joinClass",
+          "pathName": "pages/joinClass/joinClass",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/MangeClass_Tea/MangeClass_Tea",
+          "pathName": "pages/MangeClass_Tea/MangeClass_Tea",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/MangeClass_Stu/MangeClass_Stu",
+          "pathName": "pages/MangeClass_Stu/MangeClass_Stu",
           "scene": null
         }
       ]
