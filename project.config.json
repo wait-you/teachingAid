@@ -52,14 +52,20 @@
     "miniprogram": {
       "list": [
         {
-          "id": -1,
-          "name": "db guide",
-          "pathName": "pages/databaseGuide/databaseGuide",
-          "query": ""
+          "name": "pages/home/home",
+          "pathName": "pages/home/home",
+          "query": "",
+          "scene": null
         },
         {
-          "name": "pages/index/index",
-          "pathName": "pages/index/index",
+          "name": "pages/login/login",
+          "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/createStu/createStu",
+          "pathName": "pages/createStu/createStu",
           "scene": null
         }
       ]

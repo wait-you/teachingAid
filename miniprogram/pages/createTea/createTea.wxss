@@ -1,0 +1,29 @@
+/* miniprogram/pages/createStu/createStu.wxss */
+input{
+  display: inline-block;
+  width: 250rpx;
+  text-align: center;
+  background-color: #fff;
+  transform: translateY(7rpx);
+}
+
+.container{
+  background-color: #eaebeb;
+}
+
+.container form div{
+  display: flex;
+  justify-content: space-evenly;
+  width: 90vw;
+  padding-bottom: 16rpx;
+  margin-top: 40rpx;
+  border-bottom: 4rpx solid #5eb6e8;
+}
+
+.container form .tapSex radio-group{
+  display: inline-block;
+}
+
+.container form .submitBtn{
+  margin-top: 40rpx;
+}

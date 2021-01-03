@@ -1,0 +1,42 @@
+/* miniprogram/pages/logoin/login.wxss */
+@keyframes box-ani{
+  from {transform: rotate(0)}
+  to {transform: rotate(360deg)}
+}
+
+.container{
+  position: relative;
+  background-color: #c7ecee;
+}
+
+.container .title{
+  position: absolute;
+  color: #fff;
+  font-size: 50rpx;
+  top: 200rpx;
+}
+
+.container .userImage{
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  animation: box-ani 4s infinite linear;
+}
+
+.container .btn1{
+    position: absolute;
+    bottom: 300rpx;
+    background-color: #22a6b3;
+}
+
+.container .btn2{
+  position: absolute;
+  bottom: 200rpx;
+  background-color: #22a6b3;
+}

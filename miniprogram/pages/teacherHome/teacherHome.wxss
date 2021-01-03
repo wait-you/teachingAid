@@ -1,0 +1,4 @@
+/* miniprogram/pages/teacherHome/teacherHome.wxss */
+button{
+  color:#000
+}

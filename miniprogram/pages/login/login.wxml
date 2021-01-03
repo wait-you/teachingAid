@@ -1,0 +1,8 @@
+<!--miniprogram/pages/logoin/login.wxml-->
+
+<idv class="container">
+  <text class="title">图片，背景图，背景色</text>
+  <image class="userImage" src="{{userInfo.avatarUrl}}"></image>
+  <button bindtap="toStudent" class="btn1">学生登录</button>
+  <button bindtap="toTeacher" class="btn2">教师登录</button>
+</idv>

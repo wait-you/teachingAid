@@ -1,0 +1,8 @@
+<!--miniprogram/pages/home/home.wxml-->
+<div class="container">
+  <button>创建班级</button>
+  <button>发起签到</button>
+  <button>布置作业</button>
+  <button>签到统计</button>
+  <button>作业统计</button>
+</div>

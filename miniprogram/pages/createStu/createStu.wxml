@@ -1,0 +1,40 @@
+<!--miniprogram/pages/createStu/createStu.wxml-->
+<div class="container">
+  <form bindsubmit="formSubmit">
+
+    <div class="tapName">
+      <label for="name">姓名:</label>
+      <span></span>
+      <span></span>
+      <input name="name" id="name" placeholder="" type="text"></input>
+    </div>
+
+    <div class="tapSex">
+      <span>性别:</span>
+      <span></span>
+      <span></span>
+      <radio-group name="sex">
+        <label for="female">女</label>
+        <radio name="female" value="女" checked="true" id="female"></radio>
+        <label for="male">男</label>
+        <radio name="male" value="男" id="male"></radio>
+      </radio-group>
+    </div>
+
+    <div class="tapClass">
+      <label for="classroom">班级:</label>
+      <span></span>
+      <span></span>
+      <input name="classroom" type="text"></input>
+    </div>
+
+    <div class="tapNumber">
+      <label for="classroom">电话:</label>
+      <span></span>
+      <input style="width : 320rpx" name="number" type="number"></input>
+    </div>
+   <button class="submitBtn" form-type="submit">提交</button>
+  </form>
+
+  <text style="margin-top : 200rpx">图片 背景 图标</text>
+</div>
