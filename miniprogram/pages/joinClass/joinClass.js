@@ -81,11 +81,16 @@ Page({
 
         const db = wx.cloud.database()
 
+        db.collection("classes").where({classId:e.detail.value.name}).get().then(res=>{
+          console.log(res.data)
+        })
+
         db.collection("students").where({_openid:app.globalData.openId}).get().then(res=>{
           db.collection("classes").where({classId:e.detail.value.name}).get().then(result=>{
+            console.log(e.detail.value.name)
             if(result.data.length==0){
               wx.showToast({
-                title: '未到该班级',
+                title: '未找到该班级',
                 icon:"loading",
                 duration:1500
               })
@@ -110,7 +115,7 @@ Page({
                     const _ = db.command
                     db.collection("students").where({_openid:app.globalData.openId}).update({
                       data:{
-                        classes:_.push([e.detail.value.name])
+                        classes:_.push([e.detail.value.name]),
                       }
                     })
                   }).then(res=>{

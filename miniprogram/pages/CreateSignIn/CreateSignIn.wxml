@@ -1,0 +1,40 @@
+<!--miniprogram/pages/createStu/createStu.wxml-->
+<div class="container">
+  <form bindsubmit="formSubmit">
+
+    <div class="tapName">
+      <label for="name">签到名称:</label>
+      <span></span>
+      <span></span>
+      <input name="name" id="name" placeholder="" type="text"></input>
+    </div>
+
+  <div class="tapName">
+    <label for="name">签到班级:</label>
+    <span></span>
+    <picker range="{{classList}}" value="{{index2}}" bindchange="bindClassChange">
+      <view class="picker">{{classList[index2]}}</view>
+    </picker>
+  </div>
+
+    <div class="tapName">
+      <label for="name">截止时间:</label>
+      <span></span>
+      <picker mode="time" value="{{time}}" start="00:00" end="24:00" bindchange="bindTimeChange">
+        <view class="picker">{{time}}</view>
+      </picker>
+    </div>
+
+    <div class="tapName">
+      <label for="name">最远距离:</label>
+      <span></span>
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <view class="picker">{{array[index]}}</view>
+      </picker>
+    </div>
+
+   <button class="submitBtn" form-type="submit">发起</button>
+  </form>
+
+  <text style="margin-top : 200rpx">图片 背景 图标</text>
+</div>

@@ -22,15 +22,15 @@ Page({
         this.setData({
           isNull : true
         })
-      }
-
-      for(let i = 0; i < res.data[0].classes.length; i++){
-        const _ = db.command
-        db.collection(res.data[0].classes[i]).get().then(res=>{
-          this.setData({
-            classList : this.data.classList.concat(res.data[0])
+      }else{
+        for(let i = 0; i < res.data[0].classes.length; i++){
+          const _ = db.command
+          db.collection(res.data[0].classes[i]).where({_openid:app.globalData.openId}).get().then(res=>{
+            this.setData({
+              classList : this.data.classList.concat(res.data[0])
+            })
           })
-        })
+        }
       }
     })
   },

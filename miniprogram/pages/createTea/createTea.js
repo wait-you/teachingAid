@@ -132,6 +132,7 @@ Page({
                 subject : e.detail.value.classroom,
                 id : e.detail.value.id,
                 classes : [],
+                classesName : [],
                 number : e.detail.value.number
               }
             }).then(res=>{

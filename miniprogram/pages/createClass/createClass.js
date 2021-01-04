@@ -133,7 +133,8 @@ Page({
                 const _ = db.command
                 db.collection("teachers").where({_openid:app.globalData.openId}).update({
                   data:{
-                    classes : _.push([rWord])
+                    classes : _.push([rWord]),
+                    classesName : _.push(e.detail.value.name)
                   }
                 }).then(res=>{
                   db.collection("classes").add({

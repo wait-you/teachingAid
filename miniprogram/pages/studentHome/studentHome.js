@@ -74,5 +74,11 @@ Page({
     wx.navigateTo({
       url: '../MangeClass_Stu/MangeClass_Stu',
     })
+  },
+
+  toSignIn:function(){
+    wx.navigateTo({
+      url: '../SignIn/SignIn',
+    })
   }
 })

@@ -99,6 +99,18 @@
         {
           "name": "pages/MangeClass_Stu/MangeClass_Stu",
           "pathName": "pages/MangeClass_Stu/MangeClass_Stu",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/CreateSignIn/CreateSignIn",
+          "pathName": "pages/CreateSignIn/CreateSignIn",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/SignIn/SignIn",
+          "pathName": "pages/SignIn/SignIn",
           "scene": null
         }
       ]

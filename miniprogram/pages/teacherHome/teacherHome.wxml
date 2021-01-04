@@ -2,7 +2,7 @@
 <div class="container">
   <button bindtap="toCreateClass">创建班级</button>
   <button bindtap="toMangeClass">班级管理</button>
-  <button>发起签到</button>
+  <button bindtap="toCreateSignIn">发起签到</button>
   <button>布置作业</button>
   <button>签到统计</button>
   <button>作业统计</button>

@@ -1,0 +1,17 @@
+<!--miniprogram/pages/SignIn/SignIn.wxml-->
+<div class="container">
+  <div class="isNull" wx:if="{{isNull}}">
+    目前还没有任何签到任务哦！
+  </div>
+  <div class="classes" wx:else>
+    <div class="title">
+      <text style="width:180rpx">名称</text>
+      <text style="width:180rpx">时限</text>
+      <text style="width:180rpx">距离</text>
+      <text style="width:120rpx"></text>
+    </div>
+    <block wx:for="{{signList}}" wx:key="id">
+      <mySignIn itemM="{{item}}" data-index="{{index}}"/>
+    </block>
+  </div>
+</div>

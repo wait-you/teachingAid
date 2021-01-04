@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "mySignIn" : "/components/mySignIn/mySignIn"
+  },
+  "navigationBarTitleText": "快速签到"
+}

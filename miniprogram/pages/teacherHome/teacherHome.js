@@ -73,5 +73,11 @@ Page({
     wx.navigateTo({
       url: '../MangeClass_Tea/MangeClass_Tea',
     })
+  },
+
+  toCreateSignIn : function(){
+    wx.navigateTo({
+      url: '../CreateSignIn/CreateSignIn',
+    })
   }
 })

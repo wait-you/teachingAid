@@ -1,0 +1,52 @@
+/* miniprogram/pages/createStu/createStu.wxss */
+input{
+  display: inline-block;
+  width: 300rpx;
+  text-align: center;
+  background-color: #fff;
+  transform: translateY(7rpx);
+}
+
+button{
+  color: #000;
+}
+
+.container{
+  position: relative;
+  background-color: #eaebeb;
+}
+
+.container form{
+  display: block;
+  width: 90vw;
+  height: 50vw;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.container form div{
+  display: flex;
+  justify-content: space-evenly;
+  width: 90vw;
+  padding-bottom: 16rpx;
+  margin-top: 40rpx;
+  border-bottom: 4rpx solid #5eb6e8;
+}
+
+.container form .tapSex radio-group{
+  display: inline-block;
+}
+
+.container form .submitBtn{
+  margin-top: 40rpx;
+}
+
+.container form .tapName picker .picker{
+  width: 300rpx;
+  text-align: center;
+  background-color: #fff;
+}
