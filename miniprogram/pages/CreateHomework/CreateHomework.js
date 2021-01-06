@@ -163,7 +163,7 @@ Page({
             member : [],
             homeworkUrl : [],
             number : 0,
-            className : this.data.classList[index2]
+            className : this.data.classList[this.data.index2]
           }
         }).then(res=>{
           for(let i = 0; i < this.data.images.length; i++){

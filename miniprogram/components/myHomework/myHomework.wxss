@@ -1,4 +1,8 @@
 /* components/myClasses/myClasses.wxss */
+.container{
+  
+}
+
 .AllItem{
   display: flex;
   justify-content: space-evenly;
