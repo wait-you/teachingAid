@@ -12,7 +12,8 @@
     "pages/CreateSignIn/CreateSignIn",
     "pages/SignIn/SignIn",
     "pages/CreateHomework/CreateHomework",
-    "pages/Homework/Homework"
+    "pages/Homework/Homework",
+    "pages/SignInStatistics/SignInStatistics"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

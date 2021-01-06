@@ -123,7 +123,7 @@ Page({
       wx.cloud.callFunction({
         name : "msgcheck",
         data:{
-          content : e
+          content : e.detail.value.name
         }
       }).then(res=>{
         if(res.result.errCode == 0){
