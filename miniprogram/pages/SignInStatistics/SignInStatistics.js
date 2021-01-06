@@ -1,18 +1,32 @@
 // miniprogram/pages/SignInStatistics/SignInStatistics.js
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    signList : [],
+    isNull : true
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    const db = wx.cloud.database()
+    db.collection("signIn").where({_openid:app.globalData.openId}).get().then(res=>{
+      if(res.data.length==0){
+        this.setData({
+          isNull : true
+        })
+      }else{
+        this.setData({
+          signList : res.data,
+          isNull : false
+        })
+      }
+    })
   },
 
   /**

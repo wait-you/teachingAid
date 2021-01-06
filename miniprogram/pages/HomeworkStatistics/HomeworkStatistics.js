@@ -1,17 +1,32 @@
-// miniprogram/pages/home/home.js
+// miniprogram/pages/HomeworkStatistics/HomeworkStatistics.js
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    homeworkList : [],
+    isNull : true
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    const db = wx.cloud.database()
+    db.collection("homework").where({_openid:app.globalData.openId}).get().then(res=>{
+      if(res.data.length==0){
+        this.setData({
+          isNull : true
+        })
+      }else{
+        this.setData({
+          homeworkList : res.data,
+          isNull : false
+        })
+      }
+    })
   },
 
   /**
@@ -61,41 +76,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-
-  toCreateClass : function(){
-    wx.navigateTo({
-      url: '../createClass/createClass',
-    })
-  },
-
-  toMangeClass : function(){
-    wx.navigateTo({
-      url: '../MangeClass_Tea/MangeClass_Tea',
-    })
-  },
-
-  toCreateSignIn : function(){
-    wx.navigateTo({
-      url: '../CreateSignIn/CreateSignIn',
-    })
-  },
-
-  toCreateHomework : function(){
-    wx.navigateTo({
-      url: '../CreateHomework/CreateHomework',
-    })
-  },
-
-  toSignInStatistics : function(){
-    wx.navigateTo({
-      url: '../SignInStatistics/SignInStatistics',
-    })
-  },
-
-  toHomeworkStatistics : function(){
-    wx.navigateTo({
-      url: '../HomeworkStatistics/HomeworkStatistics',
-    })
-  },
+  }
 })

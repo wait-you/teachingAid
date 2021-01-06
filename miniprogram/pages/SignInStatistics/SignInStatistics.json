@@ -1,4 +1,7 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "checkMySignIn" : "/components/checkMySignIn/checkMySignIn"
+  },
+  "disableScroll" : false,
   "navigationBarTitleText": "签到统计"
 }

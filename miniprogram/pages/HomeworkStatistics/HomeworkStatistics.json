@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "checkHomework" : "/components/checkHomework/checkHomework"
+  },
+  "disableScroll" : false,
+  "navigationBarTitleText": "作业统计"
+}

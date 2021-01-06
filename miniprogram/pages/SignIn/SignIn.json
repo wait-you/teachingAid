@@ -2,5 +2,6 @@
   "usingComponents": {
     "mySignIn" : "/components/mySignIn/mySignIn"
   },
+  "disableScroll" : false,
   "navigationBarTitleText": "快速签到"
 }

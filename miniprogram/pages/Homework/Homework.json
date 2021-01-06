@@ -2,5 +2,6 @@
   "usingComponents": {
     "myHomework" : "/components/myHomework/myHomework"
   },
+  "disableScroll" : false,
   "navigationBarTitleText": "查看作业"
 }

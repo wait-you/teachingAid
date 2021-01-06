@@ -5,5 +5,5 @@
   <button bindtap="toCreateSignIn">发起签到</button>
   <button bindtap="toCreateHomework">布置作业</button>
   <button bindtap="toSignInStatistics">签到统计</button>
-  <button>作业统计</button>
+  <button bindtap="toHomeworkStatistics">作业统计</button>
 </div>

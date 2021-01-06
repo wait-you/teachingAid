@@ -1,10 +1,10 @@
 <!--components/myClasses/myClasses.wxml-->
 <div class="container">
   <div class="AllItem">
+      <text class="item item1">{{itemM.className}}</text>
       <text class="item item1">{{itemM.name}}</text>
       <text class="item item2">{{itemM.timeRange}}</text>
-      <text class="item item2">{{itemM.range}}米</text>
-      <button bindtap="tapSign" size="mini">签到</button>
+      <text class="item item2">{{itemM.number}}</text>
   </div>
 </div>
 

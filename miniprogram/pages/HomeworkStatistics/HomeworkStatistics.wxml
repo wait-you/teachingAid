@@ -1,0 +1,9 @@
+<!--miniprogram/pages/Homework/Homework.wxml-->
+<div class="isNull" wx:if="{{isNull}}">
+      没有任何作业哦！
+</div>  
+<div class="classes" wx:else>
+  <block wx:for="{{homeworkList}}" wx:key="id">
+    <checkHomework itemM="{{item}}" data-index="{{index}}"/>
+  </block>
+</div>
