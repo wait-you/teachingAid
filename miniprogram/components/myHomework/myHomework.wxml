@@ -1,0 +1,20 @@
+<!--components/myClasses/myClasses.wxml-->
+<div class="container">
+  <div class="AllItem">
+        <text class="item">{{itemM.className}}</text>
+        <text class="item ">{{itemM.name}}</text>
+  </div>
+  <div class="AllItem">
+        <text class="item item2">{{itemM.timeRange}}</text>
+        <text class="item item2">{{itemM.info}}</text>
+  </div>
+  <div class="previewImage">
+    <block wx:for="{{itemM.infoImages}}" wx:key="id">
+        <div class="imageWrap">
+          <image class="image" src="{{item}}" mode="aspectFill" data-idx="{{index}}" bindtap="handleImagePreview"></image>
+        </div>
+    </block>
+  </div>
+  <button bindtap="uploadHomework">完成作业</button>
+</div>
+

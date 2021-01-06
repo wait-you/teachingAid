@@ -1,0 +1,48 @@
+<!--miniprogram/pages/SignInStatistics/SignInStatistics.wxml-->
+<div class="container">
+  <form bindsubmit="formSubmit">
+
+    <div style="border-bottom: 4rpx solid #5eb6e8" class="tapName">
+      <label for="name">名称:</label>
+      <span></span>
+      <span></span>
+      <input name="name" id="name" placeholder="" type="text"></input>
+    </div>
+
+    <div style="border-bottom: 4rpx solid #5eb6e8"  class="tapName">
+      <label for="name">签到班级:</label>
+      <span></span>
+      <picker range="{{classList}}" value="{{index2}}" bindchange="bindClassChange">
+        <view class="picker">{{classList[index2]}}</view>
+      </picker>
+    </div>
+
+    <div style="border-bottom: 4rpx solid #5eb6e8"  class="tapName">
+      <label for="date">截止日期:</label>
+      <picker class="dateBackground" mode="date" value="{{date}}" start="{{nowDate}}" end="2024-09-01" bindchange="bindDateChange">
+        <view class="picker">{{date}}</view>
+      </picker>
+    </div>
+
+    <div style="border-bottom: 4rpx solid #5eb6e8"  class="tapInfo">
+      <label for="info">作业要求:</label>
+      <textarea name="info" id="info" cols="10" rows="10"></textarea>
+    </div>
+
+    <view style="border-bottom: 4rpx solid #5eb6e8"  class="imagesArea">
+        <view class="addImages">
+          <button type="default" size="mini" bindtap="chooseImage" wx:if="{{images.length < 3}}">添加图片</button>
+        </view>
+        <view class="previewImage">
+          <block wx:for="{{images}}" wx:key="id">
+              <view class="imageWrap">
+                <image class="image" src="{{item}}" mode="aspectFill" data-idx="{{index}}" bindtap="handleImagePreview"></image>
+                <view class="removeImage" data-idx="{{index}}" bindtap="removeImage">删除</view>
+              </view>
+          </block>
+        </view>
+    </view>
+
+    <button class="submitBtn" form-type="submit">布置</button>
+  </form>
+</div>

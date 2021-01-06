@@ -2,3 +2,4 @@
 <button bindtap="toJoinClass">加入班级</button>
 <button bindtap="toMangeClass">管理班级</button>
 <button bindtap="toSignIn">快速签到</button>
+<button bindtap="toHomework">查看作业</button>

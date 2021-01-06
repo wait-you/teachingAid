@@ -132,6 +132,8 @@ Page({
     })
 
     teachers.where({_openid:app.globalData.openId}).get().then(res=>{
+      console.log(res.data.length)
+      console.log(res.data.length==0)
       if(res.data.length==0){
         wx.redirectTo({
           url: '../createTea/createTea',

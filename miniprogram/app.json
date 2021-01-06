@@ -10,14 +10,17 @@
     "pages/MangeClass_Tea/MangeClass_Tea",
     "pages/MangeClass_Stu/MangeClass_Stu",
     "pages/CreateSignIn/CreateSignIn",
-    "pages/SignIn/SignIn"
+    "pages/SignIn/SignIn",
+    "pages/CreateHomework/CreateHomework",
+    "pages/Homework/Homework"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#c7ecee",
     "navigationBarTitleText": "教学辅助",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
   },
   "permission": {
     "scope.userLocation": {

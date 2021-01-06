@@ -111,6 +111,24 @@
         {
           "name": "pages/SignIn/SignIn",
           "pathName": "pages/SignIn/SignIn",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/CreateQRCode/CreateQRCode",
+          "pathName": "pages/CreateQRCode/CreateQRCode",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/SignInStatistics/SignInStatistics",
+          "pathName": "pages/SignInStatistics/SignInStatistics",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/Homework/Homework",
+          "pathName": "pages/Homework/Homework",
           "scene": null
         }
       ]

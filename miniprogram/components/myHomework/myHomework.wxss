@@ -1,0 +1,29 @@
+/* components/myClasses/myClasses.wxss */
+.AllItem{
+  display: flex;
+  justify-content: space-evenly;
+  width: 90vw;
+  margin: 20rpx auto 20rpx auto;
+}
+
+.item{
+  width: 200rpx;
+  text-align: center;
+  font-size: 40rpx;
+  overflow: hidden;
+}
+
+.previewImage{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.previewImage .imageWrap {
+  width: 31%;
+  margin-right: 10rpx;
+}
+
+.previewImage .image {
+  height: 200rpx;
+  width: 100%;
+}

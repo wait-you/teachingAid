@@ -80,5 +80,11 @@ Page({
     wx.navigateTo({
       url: '../SignIn/SignIn',
     })
+  },
+
+  toHomework : function(){
+    wx.navigateTo({
+      url: '../Homework/Homework',
+    })
   }
 })

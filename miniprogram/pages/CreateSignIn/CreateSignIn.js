@@ -120,35 +120,50 @@ Page({
         duration:1500
       })
     }else{
-      wx.getLocation({
-        altitude: 'true',
-        type:"wgs84"
+      wx.cloud.callFunction({
+        name : "msgcheck",
+        data:{
+          content : e
+        }
       }).then(res=>{
-        const db = wx.cloud.database()
-        db.collection("signIn").add({
-          data:{
-            name : e.detail.value.name,
-            className : this.data.classList[this.data.index2],
-            classId : this.data.classId[this.data.index2],
-            timeRange : this.data.time,
-            time : parseInt(util.formatTime(new Date()).replace(/[^0-9]/ig,"")),
-            range : this.data.array[this.data.index],
-            number : 0,
-            member : [],
-            lat : res.latitude,
-            lng : res.longitude
-          }
-        }).then(res=>{
-          wx.showModal({
-            content : "发起签到成功！",
-            showCancel : false
+        if(res.result.errCode == 0){
+          wx.getLocation({
+            altitude: 'true',
+            type:"wgs84"
           }).then(res=>{
-            wx.redirectTo({
-              url: '../teacherHome/teacherHome',
+            const db = wx.cloud.database()
+            db.collection("signIn").add({
+              data:{
+                name : e.detail.value.name,
+                className : this.data.classList[this.data.index2],
+                classId : this.data.classId[this.data.index2],
+                timeRange : this.data.time,
+                time : parseInt(util.formatTime(new Date()).replace(/[^0-9]/ig,"")),
+                range : this.data.array[this.data.index],
+                number : 0,
+                member : [],
+                lat : res.latitude,
+                lng : res.longitude
+              }
+            }).then(res=>{
+              wx.showModal({
+                content : "发起签到成功！",
+                showCancel : false
+              }).then(res=>{
+                wx.redirectTo({
+                  url: '../teacherHome/teacherHome',
+                })
+              })
             })
           })
-        })
+        }else{
+          wx.showModal({
+            title : "警告",
+            content : "请规范你输入的内容",
+            showCancel : false
+          })
+        }
       })
     }
-  }
+  },
 })

@@ -127,7 +127,8 @@ Page({
                 data:{
                   name : e.detail.value.name,
                   persons : e.detail.value.persons,
-                  classId : rWord
+                  classId : rWord,
+                  homework : []
                 }
               }).then(res=>{
                 const _ = db.command

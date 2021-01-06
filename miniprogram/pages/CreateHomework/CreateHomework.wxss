@@ -1,0 +1,91 @@
+/* miniprogram/pages/SignInStatistics/SignInStatistics.wxss */
+input{
+  display: inline-block;
+  width: 300rpx;
+  text-align: center;
+  background-color: #fff;
+  transform: translateY(7rpx);
+}
+
+button{
+  color: #000;
+}
+
+.container{
+  position: relative;
+  background-color: #eaebeb;
+}
+
+.container form{
+  display: block;
+  width: 90vw;
+  height: 50vw;
+}
+
+.container form div{
+  display: flex;
+  justify-content: space-evenly;
+  width: 90vw;
+  padding-bottom: 16rpx;
+  margin-top: 40rpx;
+}
+
+.container form .tapSex radio-group{
+  display: inline-block;
+}
+
+.container form .submitBtn{
+  margin-top: 40rpx;
+}
+
+.container form .dateBackground{
+  background-color: #fff;
+  width: 300rpx;
+  text-align: center;
+}
+
+.container form .tapName picker .picker{
+  width: 300rpx;
+  text-align: center;
+  background-color: #fff;
+}
+
+.container form .tapInfo label{
+  line-height: 300rpx;
+}
+
+.container form .tapInfo textarea{
+  background-color: #fff;
+  width: 300rpx;
+  height: 300rpx;
+}
+
+
+.container form .imagesArea {
+  padding: 15rpx 0;
+}
+
+.container form .imagesArea .addImages{
+  display: flex;
+  align-items: center;
+}
+
+.container form .imagesArea .previewImage {
+  display: flex;
+  align-items: center;
+  margin-top: 40rpx;
+}
+
+.container form .imagesArea .previewImage .imageWrap {
+  width: 31%;
+  margin-right: 10rpx;
+}
+
+.container form .imagesArea .previewImage .image {
+  height: 200rpx;
+  width: 100%;
+}
+
+.container form .imagesArea .previewImage .removeImage {
+  text-align: center;
+}

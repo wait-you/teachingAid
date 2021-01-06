@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "myHomework" : "/components/myHomework/myHomework"
+  },
+  "navigationBarTitleText": "查看作业"
+}

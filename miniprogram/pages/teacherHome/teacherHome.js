@@ -79,5 +79,11 @@ Page({
     wx.navigateTo({
       url: '../CreateSignIn/CreateSignIn',
     })
+  },
+
+  toCreateHomework : function(){
+    wx.navigateTo({
+      url: '../CreateHomework/CreateHomework',
+    })
   }
 })
